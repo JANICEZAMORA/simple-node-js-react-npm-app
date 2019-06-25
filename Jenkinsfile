@@ -11,7 +11,7 @@ pipeline {
                 sh 'npm install' 
                }
         steps {
-                sh '\jenkins\scripts\test.sh' 
+                sh 'https://github.com/JANICEZAMORA/simple-node-js-react-npm-app.git/jenkins/scripts/test.sh' 
             }
         }
     }
