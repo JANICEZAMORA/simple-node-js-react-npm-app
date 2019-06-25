@@ -10,7 +10,8 @@ pipeline {
             steps {
                 sh 'npm install' 
                }
-        steps {
+        stage('Test') { 
+            steps {
                 sh 'https://github.com/JANICEZAMORA/simple-node-js-react-npm-app.git/jenkins/scripts/test.sh' 
             }
         }
